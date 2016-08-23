@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HubaoTestToolkit</class>
+ <widget class="QWidget" name="HubaoTestToolkit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>723</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>HubaoTestToolkit</string>
+  </property>
+  <widget class="QTextBrowser" name="Display_panel">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>381</width>
+     <height>701</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Condition">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>user_id</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>user_id (int)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>room_id</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>nickname</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="Label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>KEY</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Query">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Query</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Request">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>71</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Request</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Condition_value">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="Api_list">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>481</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>200</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Interface</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>URL</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="Category">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>201</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Common</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Compere</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Content</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mate</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Payment</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Property</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Room</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Support</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>User</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="Add_api">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>380</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Add_category">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>60</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Remove_api">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>410</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>490</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

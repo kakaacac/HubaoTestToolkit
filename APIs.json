@@ -1,0 +1,30 @@
+{
+  "Common":[],
+  "Compere":[
+    {
+      "name":"withdrawal_history",
+      "url":"/v1/comperes/<compere_id>/withdraws/histories",
+      "method":{
+        "get":{
+          "url_param":[
+            {
+              "index":{
+                "default":1
+              },
+              "size":{
+                "default":10
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Content":[],
+  "Mate":[],
+  "Payment":[],
+  "Property":[],
+  "Room":[],
+  "Support":[],
+  "User":[]
+}
