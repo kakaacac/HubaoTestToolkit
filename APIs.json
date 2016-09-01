@@ -3,17 +3,43 @@
   "Compere":[
     {
       "name":"withdrawal_history",
-      "url":"/v1/comperes/<compere_id>/withdraws/histories",
+      "url":"/v1/comperes/",
       "method":{
         "get":{
+          "content_type":"application/x-www-form-urlencoded",
           "url_param":[
             {
-              "index":{
-                "default":1
-              },
-              "size":{
-                "default":10
-              }
+              "name":"index",
+              "default":1
+            },
+            {
+              "name":"size",
+              "default":10
+            },
+            {
+              "name": "compere_id",
+              "default": "$user_id"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name":"income_summary",
+      "url":"/v1/comperes/income/summary",
+      "method":{
+        "get":{}
+      }
+    },
+    {
+      "name":"exchange_vcy",
+      "url":"/v1/comperes/exchange",
+      "method":{
+        "post":{
+          "content_type":"application/json",
+          "body_param":[
+            {
+              "name":"cur_amount"
             }
           ]
         }
